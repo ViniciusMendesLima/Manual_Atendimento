@@ -1,14 +1,19 @@
+const caminhoBase = window.location.hostname === "viniciusmendeslima.github.io"
+  ? "/Manual_Atendimento/"
+  : "../../../../";
+
 let menuASIDE = `
   <section class="sidebar-logo">
         <a href="../index.html" aria-label="Voltar para a página inicial">
-          <img  src="../../logos/logo-stg.png" alt="Logo BP" />
+          <img  src="../../logos/BP_Anual.png" alt="Logo BP" />
         </a>
       </section>
 
       <!-- Menu principal -->
       <nav class="sidebar-menu">
+      
         <ul>
-          <li class="manuais_s_a"><a href="../../../../index.html">Manuais Assistencia Segura</a></li>
+          <li class="manuais_s_a"><a href="${caminhoBase}index.html">Manuais Assistencia Segura</a></li>
           <li><a href="./condicoesAtendimento.html">Condições para o 
           Atendimento</a></li>
           <li>

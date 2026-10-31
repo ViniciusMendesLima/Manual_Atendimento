@@ -50,7 +50,7 @@ let menuASIDE = `
       </footer>
 `;
 document.addEventListener("DOMContentLoaded", () => {
-  const menuContainer = document.getElementById("menu-aside");
+  const menuContainer = document.getElementById("menu_aside");
   if (menuContainer) {
     menuContainer.innerHTML = menuASIDE;
   }

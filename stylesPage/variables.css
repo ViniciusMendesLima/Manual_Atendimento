@@ -1,0 +1,20 @@
+:root{
+--bgMain:#F8F6F2;
+--bgAside:#F7F7F5;
+
+--title: #0a178b;
+--subTitle: #4a55b6;
+--hoverDetails: #0077cc;
+
+--bgAlert:#fff2cc;
+
+--textAlert:#C00000;
+
+  --table-border: #0f172a;
+  --table-header-bg: #1f3864;
+  --table-header-text: #ffffff;
+  --table-row-odd: #ffffff;
+  --table-row-even: #eef2ff;
+  --alert-bg: var(--bgAlert, #fffbeb);
+  --alert-border: var(--textAlert, #f59e0b);
+}

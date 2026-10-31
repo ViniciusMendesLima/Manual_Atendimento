@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        width: 100%;
+        min-width: 0;
+    }
+    
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    aside {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 240px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    aside.menu-aberto {
+        left: 0;
+    }
+
+    main {
+        grid-column: 1;
+    }
+}

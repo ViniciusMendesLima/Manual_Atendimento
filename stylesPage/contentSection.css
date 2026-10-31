@@ -1,0 +1,146 @@
+/* ============================================================
+   1. TOKENS / VARIÁVEIS LOCAIS
+   ============================================================ */
+/* ============================================================
+   2. LAYOUT PRINCIPAL (MAIN)
+   ============================================================ */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 1rem;
+  gap: 2rem;
+}
+
+/* ============================================================
+   3. SEÇÕES DE CONTEÚDO
+   ============================================================ */
+.content_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 1rem;
+}
+
+.content_section p {
+  text-align: justify;
+}
+
+.content_section h2 {
+  font-size: 1.5rem;
+  color: var(--title);
+}
+
+.content_section h3 {
+  font-size: 1.2rem;
+  color: var(--subTitle);
+  border-bottom: 3px solid var(--subTitle);
+  margin-bottom: 0.5rem;
+}
+
+.content_section ul,
+.content_section ol {
+  padding-left: 2.25rem;
+  line-height: 1.5;
+}
+
+/* Primeira seção (pode virar utilitário) */
+.first_section {
+  margin-top: 2rem;
+}
+
+/* ============================================================
+   4. SERVIÇOS (AGRUPAMENTOS E DETALHES)
+   ============================================================ */
+.services_container,
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services_container .service {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+.services_container details {
+  padding-left: 1.5rem;
+}
+
+/* ============================================================
+   5. TÍTULO DO MANUAL
+   ============================================================ */
+.type_Assistence {
+  color: var(--title);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   6. ALERTAS
+   ============================================================ */
+.content_alert {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--alert-bg);
+  border-left: 5px solid var(--alert-border);
+  padding-left: 1rem;
+}
+
+.content_alert strong {
+  color: var(--alert-border);
+}
+
+/* ============================================================
+   7. TABELAS
+   ============================================================ */
+.table {
+  width: 100%;
+}
+
+/* Cabeçalho */
+.table thead th {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem 0.5rem;
+}
+
+/* Células (escopo restrito à .table) */
+.table th,
+.table td {
+  border: 1px solid var(--table-border);
+  padding: 5px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Zebra por grupo (tbody) */
+.table tbody.grupo:nth-of-type(odd) td {
+  background: var(--table-row-odd);
+}
+
+.table tbody.grupo:nth-of-type(even) td {
+  background: var(--table-row-even);
+}
+
+
+/* Hover no grupo inteiro */
+.table tbody.grupo:hover td {
+  background: #dbeafe;
+}
+
+/* ============================================================
+   8. UTILITÁRIOS
+   ============================================================ */
+.text-bold {
+  font-weight: 700;
+}
+
+.exclusion p {
+  color: var(--alert-border);
+  font-weight: bold;
+}

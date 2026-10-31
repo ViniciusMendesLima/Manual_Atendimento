@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+body{
+    background-color: rgb(231, 233, 235);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+  padding: 2rem;
+  
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  
+}
+
+.assistenciaSegura h1{
+font-size: 5rem;
+
+}
+
+.logosSeguroManual {
+  width: 30rem;
+  min-height: 12rem;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logosSeguroManual > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.logosSeguroManual > a > img {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.logosSeguroManual > a > span {
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.logosSeguroManual:hover > a > span {
+    color: #12997c;
+}

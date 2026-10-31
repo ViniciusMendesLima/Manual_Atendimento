@@ -2,8 +2,8 @@
 .menu-toggle {
     display: none;
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 5px;
+    left: 2px;
     z-index: 1001;
     font-size: 28px;
     background: var(--bgAside);

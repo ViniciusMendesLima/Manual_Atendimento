@@ -1,3 +1,7 @@
+const caminhoBase = window.location.hostname === "viniciusmendeslima.github.io"
+  ? "/Manual_Atendimento/"
+  : "../../../../";
+
 let menuASIDE = `
   <section class="sidebar-logo">
         <a href="../index.html" aria-label="Voltar para a página inicial">
@@ -9,7 +13,7 @@ let menuASIDE = `
       <nav class="sidebar-menu">
       
         <ul>
-          <li class="manuais_s_a"><a href="../../../../index.html">Manuais Assistencia Segura</a></li>
+          <li class="manuais_s_a"><a href="${caminhoBase}index.html">Manuais Assistencia Segura</a></li>
           <li><a href="./visaoGeral.html">Visão Geral do Produto</a></li>
           <li>
             <a href="./servicos.html">Serviços da Assistência 24 horas</a>

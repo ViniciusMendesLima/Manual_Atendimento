@@ -1,0 +1,12 @@
+.content_section_division{
+    position: relative;
+  border-bottom: none;
+}
+
+.content_section_division::after{
+    content: "";
+  left: 0;
+  width: 100%; /* controla o comprimento da linha */
+  border-bottom: 3px solid var(--subTitle);
+  padding-top: .5rem;
+}

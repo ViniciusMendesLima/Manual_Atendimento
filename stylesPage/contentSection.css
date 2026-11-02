@@ -21,18 +21,12 @@ main {
 
 .content_section p {
   text-align: justify;
-}
 
-.content_section h2 {
-  font-size: 1.5rem;
-  color: var(--title);
 }
 
 .content_section h3 {
   font-size: 1.2rem;
-  color: var(--subTitle);
-  border-bottom: 3px solid var(--subTitle);
-  margin-bottom: 0.5rem;
+  color: var(--title);
 }
 
 .content_section ul,

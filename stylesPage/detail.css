@@ -6,21 +6,22 @@ summary {
   width: 100%;
 }
 
-summary h3 {
+.sum_h{
   font-size: 1.2rem;
   color: var(--subTitle);
-  border-bottom: 3px solid var(--subTitle);
+}
 
+.service details summary h2 {
+  font-size: 1.5rem;
+  color: var(--subTitle);
+  border-bottom: 3px solid var(--subTitle);
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 
-summary:hover {
+summary:hover .sum_h {
   color: var(--hoverDetails);
-}
-
-summary:hover h3 {
-  color: var(--hoverDetails);
-    border-bottom: 3px solid var(--hoverDetails);
+  border-bottom: 3px solid var(--hoverDetails);
 }
 
 details summary::-webkit-details-marker {
